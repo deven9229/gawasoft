@@ -3,15 +3,11 @@
 # only Main files contain this front matter, not partials.
 ---
 
-$bg:  #29292c;
-$text: #fff;
+@import 'color';
+@import 'typography';
 
 body {
-  color: $text;
-  background: $bg;
-}
-
-.container {
-  width: 600px;
-  margin: 0 auto;
+  font-family: $ff-s;
+  background-color: $clr-grey;
+  color: $clr-white;
 }
