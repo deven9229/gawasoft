@@ -6,8 +6,98 @@
 @import 'color';
 @import 'typography';
 
-body {
-  font-family: $ff-s;
-  background-color: $clr-grey;
-  color: $clr-white;
+body{
+	background-color: $clr-grey;
+	color: $clr-white;
+	font-family:$ff-s;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#navbar{
+	background-color: $clr-grey;
+	color: $clr-white;
+}
+
+/* navbar */
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color: $clr-white;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+/* button */
+.button{
+	background-color: $clr-orange;
+	border-radius: 100rem;
+	color: $clr-white;
+}
+/* showcase */
+#showcase{
+	background-image:url('/assets/images/showcase.jpg');
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+#showcase h1{
+	color: $clr-white;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:30px;
+}
+
+/* main */
+#main{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background: #333;
+	color: $clr-white;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+/* footer */
+#main-footer{
+	background: $clr-grey;
+	color: $clr-white;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
 }
